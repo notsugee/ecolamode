@@ -13,10 +13,9 @@ import Link from "next/link";
 interface iAppProps {
   email: string;
   name: string;
-  userImage: string | undefined;
 }
 
-export function UserNav({ email, name, userImage }: iAppProps) {
+export function UserNav({ email, name }: iAppProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
