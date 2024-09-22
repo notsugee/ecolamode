@@ -22,9 +22,6 @@ export async function Navbar() {
           <UserNav
             email={user.email as string}
             name={user.given_name as string}
-            userImage={
-              user.picture ?? `https://avatar.vercel.sh/${user.given_name}`
-            }
           />
         ) : (
           <div className="flex gap-[0.375rem]">
